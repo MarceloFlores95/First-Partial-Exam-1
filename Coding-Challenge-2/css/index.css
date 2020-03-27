@@ -5,3 +5,87 @@ div{
     padding: 5px;
 }
 
+@media (max-width:600px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+        
+    }
+
+    .nav-box {
+        width: 46%;
+    }
+
+    .heading, .heading-box ,.content,.side,.side-box, .main, .main-box {
+        color: transparent;
+        border: transparent;
+        position: relative;
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width:600px) and (max-width:990px) {
+    .heading, .heading-box {
+        color: transparent;
+        border: transparent;
+        position: relative;
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+        
+    }
+
+    .nav-box {
+        width: 22%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .side > .special-side-box {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .side {
+        width: 30%;
+    }
+
+    .main {
+        width: 60%;
+    }
+}
+
+@media (min-width:991px) {
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .side {
+        width: 30%;
+        justify-content: space-evenly;
+    }
+
+    .main {
+        width: 60%;
+    }
+    
+}
